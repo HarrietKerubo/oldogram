@@ -16,6 +16,7 @@ html, body {
     border-bottom: 1px solid #C6C6C6;
     display: flex;
     justify-content: space-between;
+    padding: 16px;
 }
 
 .sections-bg{
@@ -50,6 +51,7 @@ html, body {
     margin-top: 16px;
    
 }
+
 .post-image img{
     height: 375px;
 }

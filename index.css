@@ -8,19 +8,23 @@ html, body {
 .container{
     width: 375px;
     margin: 0 auto;
+    background-color:#EDEDED;
     
 }
 
 .header{
-    height: 67px;
+    /* height: 67px; */
     border-bottom: 1px solid #C6C6C6;
     display: flex;
     justify-content: space-between;
     padding: 16px;
+    background-color: #ffffff;
 }
 
-.sections-bg{
+.post-content{
+    margin-bottom: 25px;
     background-color: #ffffff;
+
 }
 
 .user-info{
@@ -53,16 +57,21 @@ html, body {
 }
 
 .post-image img{
-    height: 375px;
+    /* height: 375px; */
+    width: 375px;
 }
+
+/* .post-image{
+    border: 1px solid green;
+} */
 
 .icons{
     width: 104px;
     display: flex;
     justify-content: space-between;
-    margin-top: 21px;
+    margin-top: 10px;
     padding-left: 10px;
-    
+  
 }
 
 .post-icons{
@@ -70,7 +79,7 @@ html, body {
 }
 
 .post-body{
-    padding-bottom: 16px;
+    padding-bottom: 10px;
 }
 
 /* Typography */

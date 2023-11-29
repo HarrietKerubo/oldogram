@@ -1,3 +1,13 @@
+// const userInfoEl = document.querySelector(".user-info");
+// const infoEl = document.querySelector(".info");
+// const postImageEl = document.querySelector(".post-image");
+// const likeCountEl = document.querySelector(".like-count");
+// const captionEl = document.querySelector(".caption");
+// const postContentEl = document.querySelector(".post-content");
+const mainSectiontEl = document.querySelector(".main");
+
+console.log(mainSectiontEl);
+
 const posts = [
   {
     name: "Vincent van Gogh",
@@ -28,3 +38,60 @@ const posts = [
     likes: 152,
   },
 ];
+
+let name = "";
+let username = "";
+let userlocation = "";
+let avatar = "";
+let post = "";
+let comment = "";
+let likes = "";
+
+let postContentItems = "";
+
+for (let i = 0; i < posts.length; i++) {
+  postContent = posts[i];
+  name = postContent.name;
+  username = postContent.username;
+  userlocation = postContent.location;
+  avatar = postContent.avatar;
+  post = postContent.post;
+  comment = postContent.comment;
+  likes = postContent.likes;
+
+  postContentItems += ` 
+  <div class= "post-content">
+  <div class="user-info">
+  <img class="avatar" src=${avatar}/>
+  <div class="info">
+  <h3>
+    ${name}
+    <span class="location"> ${userlocation} </span>
+  </h3>
+</div>
+</div>
+<div class="post-image">
+<img id="post" src=${post}/>
+</div>
+<div class="post-body">
+<div class="icons">
+  <img class="post-icons" src="images/icon-heart.png" />
+  <img class="post-icons" src="images/icon-comment.png" />
+  <img class="post-icons" src="images/icon-comment.png" />
+</div>
+<div class="like-count">
+  <h3> ${likes}<span class="likes"> likes </span></h3>
+</div>
+<div class="caption">
+  <h3>
+    ${username}
+    <span class="caption"> ${comment}</span>
+  </h3>
+</div>
+</div>
+</div>
+
+  `;
+}
+
+mainSectiontEl.innerHTML = postContentItems;

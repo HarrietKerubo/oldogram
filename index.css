@@ -57,13 +57,10 @@ html, body {
 }
 
 .post-image img{
-    /* height: 375px; */
+   
     width: 375px;
 }
 
-/* .post-image{
-    border: 1px solid green;
-} */
 
 .icons{
     width: 104px;

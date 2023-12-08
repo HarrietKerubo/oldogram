@@ -1,2 +1,2 @@
 # oldogram
-A clone of an instragram post built with html, css
+A clone of an instragram feed built with html, css and Javascript
